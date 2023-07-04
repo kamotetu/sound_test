@@ -1,0 +1,9 @@
+version: "3.4"
+
+services:
+  app:
+    image: php:7.3-apache-stretch
+    volumes:
+      - ./src:/var/www/html/
+    ports:
+      - 8080:80
